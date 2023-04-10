@@ -1,0 +1,1 @@
+import{_ as e,o,c as t,a as s}from"./app.b74d2e03.js";const _={},c=s("p",null,"Compositions API Options API",-1),n=[c];function a(r,l){return o(),t("div",null,n)}const u=e(_,[["render",a],["__file","vue3\u6E90\u7801.html.vue"]]);export{u as default};

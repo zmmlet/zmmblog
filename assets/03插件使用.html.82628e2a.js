@@ -1,0 +1,107 @@
+import{_ as p,r as t,o,c as i,a as n,b as s,d as l,e as a}from"./app.b74d2e03.js";const c={},r=a(`<h1 id="\u63D2\u4EF6\u4F7F\u7528" tabindex="-1"><a class="header-anchor" href="#\u63D2\u4EF6\u4F7F\u7528" aria-hidden="true">#</a> \u63D2\u4EF6\u4F7F\u7528</h1><h2 id="\u6EDA\u52A8\u9009\u4E2D\u76EE\u5F55" tabindex="-1"><a class="header-anchor" href="#\u6EDA\u52A8\u9009\u4E2D\u76EE\u5F55" aria-hidden="true">#</a> \u6EDA\u52A8\u9009\u4E2D\u76EE\u5F55</h2><ol><li>\u5B89\u88C5 <code>yarn add @vuepress/plugin-active-header-links -D</code></li><li>\u5728 <code>docs\\.vuepress\\config.js</code> \u5F15\u5165</li><li>\u914D\u7F6E</li></ol><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> activeHeaderLinksPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@vuepress/plugin-active-header-links&#39;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">activeHeaderLinksPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u641C\u7D22" tabindex="-1"><a class="header-anchor" href="#\u641C\u7D22" aria-hidden="true">#</a> \u641C\u7D22</h2><ol><li>\u5B89\u88C5</li><li>\u5728 <code>docs\\.vuepress\\config.js</code> \u5F15\u5165</li><li>\u914D\u7F6E</li></ol><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> searchPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@vuepress/plugin-search&#39;</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token function">searchPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">locales</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&#39;/&#39;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">placeholder</span><span class="token operator">:</span> <span class="token string">&#39;\u641C\u7D22&#39;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string-property property">&#39;/zh/&#39;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">placeholder</span><span class="token operator">:</span> <span class="token string">&#39;\u641C\u7D22&#39;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// \u5141\u8BB8\u641C\u7D22 Frontmatter \u4E2D\u7684 \`tags\`</span>
+      <span class="token function-variable function">getExtraFields</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">page</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> page<span class="token punctuation">.</span>frontmatter<span class="token punctuation">.</span>tags <span class="token operator">??</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u8FD4\u56DE\u9876\u90E8" tabindex="-1"><a class="header-anchor" href="#\u8FD4\u56DE\u9876\u90E8" aria-hidden="true">#</a> \u8FD4\u56DE\u9876\u90E8</h2><ol><li>\u5B89\u88C5 <code>yarn add @vuepress/plugin-back-to-top -D</code></li><li>\u914D\u7F6E</li></ol><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&#39;@vuepress/back-to-top&#39;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u590D\u5236\u4EE3\u7801\u5757" tabindex="-1"><a class="header-anchor" href="#\u590D\u5236\u4EE3\u7801\u5757" aria-hidden="true">#</a> \u590D\u5236\u4EE3\u7801\u5757</h2>`,11),u={class:"custom-container tip"},d=n("p",{class:"custom-container-title"},"TIP",-1),k={href:"https://vuepress-theme-hope.github.io/v2/copy-code/zh/",target:"_blank",rel:"noopener noreferrer"},v=a(`<ol><li>\u5B89\u88C5 <code>yarn add -D vuepress-plugin-copy-code2@next</code></li><li>\u5728 <code>docs\\.vuepress\\config.js</code> \u5F15\u5165</li><li>\u914D\u7F6E</li></ol><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> copyCodePlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vuepress-plugin-copy-code2&#39;</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token function">copyCodePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">showInMobile</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u5B8C\u6574\u914D\u7F6E\u4EE3\u7801" tabindex="-1"><a class="header-anchor" href="#\u5B8C\u6574\u914D\u7F6E\u4EE3\u7801" aria-hidden="true">#</a> \u5B8C\u6574\u914D\u7F6E\u4EE3\u7801</h2><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defaultTheme <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vuepress&#39;</span>
+<span class="token comment">// \u641C\u7D22\u6846</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> searchPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@vuepress/plugin-search&#39;</span>
+<span class="token comment">// \u6EDA\u52A8\u9009\u62E9\u5BF9\u5E94\u6807\u9898</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> activeHeaderLinksPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;@vuepress/plugin-active-header-links&#39;</span>
+<span class="token comment">// \u590D\u5236\u4EE3\u7801</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> copyCodePlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vuepress-plugin-copy-code2&#39;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> navbar<span class="token punctuation">,</span> sidebar <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;./config/index&#39;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">lang</span><span class="token operator">:</span> <span class="token string">&#39;zh-CN&#39;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">&#39;\u6211\u7761\u7740\u7684\u65F6\u5019\u4E0D\u56F0\u5509&#39;</span><span class="token punctuation">,</span> <span class="token comment">// \u7F51\u7AD9\u6807\u9898</span>
+  <span class="token literal-property property">description</span><span class="token operator">:</span> <span class="token string">&#39;\u8BB0\u5F55\u5B66\u4E60\u7B14\u8BB0&#39;</span><span class="token punctuation">,</span> <span class="token comment">// \u7F51\u7AD9\u7684\u63CF\u8FF0</span>
+  <span class="token literal-property property">dest</span><span class="token operator">:</span> <span class="token string">&#39;./dist&#39;</span><span class="token punctuation">,</span> <span class="token comment">// \u8BBE\u7F6E\u7F16\u8BD1\u540E\u7684\u8F93\u51FA\u76EE\u5F55./ROOT\u4EE3\u8868\u5728\u5DE5\u7A0B\u7684\u6839\u76EE\u5F55\u4E0B\u751F\u6210\u4E00\u4E2AROOT\u6587\u4EF6\uFF0C\u91CC\u9762\u662F\u7F16\u8BD1\u597D\u7684\u6587\u4EF6\uFF0C\u53EF\u4EE5\u62FFROOT\u76F4\u63A5\u90E8\u7F72</span>
+  <span class="token literal-property property">base</span><span class="token operator">:</span> <span class="token string">&#39;/zmmblog/&#39;</span><span class="token punctuation">,</span> <span class="token comment">// \u8BBE\u7F6E\u7AD9\u70B9\u6839\u8DEF\u5F84 // \u8DEF\u5F84\u540D\u4E3A &quot;/&lt;REPO&gt;/&quot;</span>
+  <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">3026</span><span class="token punctuation">,</span> <span class="token comment">// \u7AEF\u53E3\u53F7</span>
+  <span class="token literal-property property">head</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// \u589E\u52A0\u4E00\u4E2A\u81EA\u5B9A\u4E49\u7684 favicon</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&#39;link&#39;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">rel</span><span class="token operator">:</span> <span class="token string">&#39;icon&#39;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">href</span><span class="token operator">:</span> <span class="token string">&#39;/favicons/favicon-16x16.png&#39;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">&#39;image/png&#39;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">sizes</span><span class="token operator">:</span> <span class="token string">&#39;16x16&#39;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span>
+      <span class="token comment">// \u89E3\u51B3\u5916\u8054\u56FE\u7247\u4E0D\u663E\u793A\u7531\u4E8E\u6211\u4EECvuepress\u672C\u5730\u670D\u52A1\u628A\u5F53\u524D\u672C\u7AD9\u7684referrer\u5E26\u7ED9\u4E86cdn\u56FE\u7247\u8BF7\u6C42\uFF0C\u7B2C\u4E09\u65B9\u53D1\u73B0\u4E0D\u662F\u672C\u7AD9\u7684\u8BF7\u6C42</span>
+      <span class="token string">&#39;meta&#39;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&#39;referrer&#39;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">&#39;no-referrer&#39;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// \u79FB\u52A8\u7AEF\u4F18\u5316</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&#39;meta&#39;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&#39;viewport&#39;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">content</span><span class="token operator">:</span>
+          <span class="token string">&#39;width=device-width,initial-scale=1,user-scalable=no,maximum-scale=2&#39;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">// \u63D2\u4EF6\u914D\u7F6E-----------------------------</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token function">copyCodePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">showInMobile</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">searchPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">locales</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&#39;/&#39;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">placeholder</span><span class="token operator">:</span> <span class="token string">&#39;\u641C\u7D22&#39;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string-property property">&#39;/zh/&#39;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token literal-property property">placeholder</span><span class="token operator">:</span> <span class="token string">&#39;\u641C\u7D22&#39;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// \u5141\u8BB8\u641C\u7D22 Frontmatter \u4E2D\u7684 \`tags\`</span>
+      <span class="token function-variable function">getExtraFields</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">page</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> page<span class="token punctuation">.</span>frontmatter<span class="token punctuation">.</span>tags <span class="token operator">??</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">activeHeaderLinksPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">&#39;@vuepress/back-to-top&#39;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token literal-property property">theme</span><span class="token operator">:</span> <span class="token function">defaultTheme</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">logo</span><span class="token operator">:</span> <span class="token string">&#39;/images/logo.png&#39;</span><span class="token punctuation">,</span>
+    <span class="token comment">// \u9ED8\u8BA4\u4E3B\u9898\u914D\u7F6E</span>
+    <span class="token literal-property property">navbar</span><span class="token operator">:</span> navbar<span class="token punctuation">,</span>
+    <span class="token literal-property property">sidebar</span><span class="token operator">:</span> sidebar
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4);function m(b,g){const e=t("ExternalLinkIcon");return o(),i("div",null,[r,n("div",u,[d,n("p",null,[s("\u5B98\u7F51\uFF1A"),n("a",k,[s("https://vuepress-theme-hope.github.io/v2/copy-code/zh/"),l(e)])])]),v])}const h=p(c,[["render",m],["__file","03\u63D2\u4EF6\u4F7F\u7528.html.vue"]]);export{h as default};
